@@ -16,35 +16,25 @@ module.exports = {
       path: '/'
     },
     {
+      label: 'Now',
+      path: '/pages/now'
+    },    
+    {
       label: 'About me',
       path: '/pages/about'
-    },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Suyash Behera',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Hi! Welcome to my blog',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
+      email: 'behera [dot] suyash@gmail.com',
+      telegram: 'sne9x',
       twitter: '#',
-      github: '#',
-      rss: '',
-      vkontakte: '',
+      github: 'suyash458',
       linkedin: '#',
-      instagram: '#',
-      line: '',
-      gitlab: '',
-      weibo: '',
-      codepen: '',
-      youtube: '',
-      soundcloud: '',
-      medium: '',
+      instagram: 'suyashbehera',
     }
   }
 };
