@@ -29,9 +29,8 @@ I got a cheap SMPS that does 5A at 5V but it's noisy (transformer hums). I guess
 - Misc. components like jumpers, soldering equipment, prototyping boards etc
 
 ### Architecture
-Traditional projects with the ESP32 usually involve a web server with the chip running in access point mode but, this means that you'd have to disconnect from the home WiFi network and connect to the ESP's acces point every time you need to communicate with it. Since most people have a router at home, we can have the ESP connect to the home network and start a local webserver. This poses an additional problem since the ESP won't know the SSID and password of the network to connect to. Luckily the ESP can run in dual mode and act as an AP and client at the same time. So the SSID and password can be configured by connecting to the AP after which, the ESP will connect to the home network. Once on the home network, it starts a websocket server which will be used to communicate with an Android app. The app will send a JSON payload with parameters like maximum brightness, speed, set of colors and the effect type.
+Traditional projects with the ESP32 usually involve a web server with the chip running in access point mode but, this means that you'd have to disconnect from the home WiFi network and connect to the ESP's acces point every time you need to communicate with it. Since the ESP supports Bluetooth Low Energy, we can have a server running on it and use an Android app to scan for it and connect to it. Unfortunately though, BLE has a packet length limit of 20 bytes which can be extended to 512 bytes so sending large packets of data could be problematic. Some libraries take care of this by chunking messages before sending them
 
-![Architecture](./arch.png)
 
 ### Connections
 5V out -> V<sub>in</sub>. The V<sub>in</sub> pin accepts unregulated supplies in the 5-12v range</br>
@@ -172,18 +171,8 @@ void cyclePalette(CRGB leds[], uint8_t num_leds, CRGBPalette16 palette, uint8_t 
 }
 ```
 
-## The App
-You can skip this section if you're not interested in Android development.
-
-
-## Libraries
-- nv-websocket-client
-- Dagger 2
-- Moshi
-
 ### Possible features to add
 -   Alexa/Google assistant integration
 -   Dynamic patterns based on music being played
-
 -   Changing colors based on the dominant color on the screen
-    Not sure how to go about this, this'll require plugging into the TV to know the dominant color or having a sensor facing the screen at all times
+-   Not sure how to go about this, this'll require plugging into the TV to know the dominant color or having a sensor facing the screen at all times
