@@ -97,7 +97,6 @@ void blendColors(CRGB leds[], uint8_t num_leds, CHSV colors[], uint8_t num_color
     }
 }
 ```
-
 Neither of these effects take advantage of the fact that the LEDs are individually addressable so we're going to add another pattern that uses a color palette and paints the strip in a wave. To do that, we'll have to create a color palette from our list of colors and use `fill_palette` to color the LEDs. The end result looks something like this
 
 ![wavePattern](https://i.imgur.com/E3xMnJ0.gif)

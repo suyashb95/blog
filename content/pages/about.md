@@ -4,4 +4,4 @@ template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
-Hi! I am a Computer Science Graduate currently working out of Bangalore. I like tikering around with electronics projects and contributing to open source codebases. I also like reading, listening to rock music and playing call of duty/Apex legends sometimes. 
+Hi! I am a Computer Science Graduate currently working out of Bangalore. I like tinkering around with electronics projects and contributing to open source codebases (I plan to write about these dabblings in this blog). I also like reading, listening to synthwave/rock music and, playing Call of Duty/Apex Legends sometimes. 
