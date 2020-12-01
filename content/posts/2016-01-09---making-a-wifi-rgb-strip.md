@@ -1,6 +1,6 @@
 ---
 title: Making a Bluetooth Controlled RGB LED Strip
-date: "2016-09-01T23:46:37.121Z"
+date: "2020-09-01T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "making-a-bluetooth-rgb-strip"

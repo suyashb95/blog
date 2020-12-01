@@ -2,7 +2,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Author from './Author';
-import Comments from './Comments';
+import { DiscussionEmbed } from 'disqus-react';
+import { useSiteMetadata } from '../../hooks';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
@@ -17,6 +18,12 @@ const Post = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
   const { tags, title, date } = post.frontmatter;
+  const { url, disqusShortname } = useSiteMetadata();
+
+  const disqusConfig = {
+    shortname: disqusShortname,
+    config: { identifier: slug, title: post.frontmatter.title },
+  };
 
   return (
     <div className={styles['post']}>
@@ -33,7 +40,7 @@ const Post = ({ post }: Props) => {
       </div>
 
       <div className={styles['post__comments']}>
-        <Comments postSlug={slug} postTitle={post.frontmatter.title} />
+        { disqusShortname && <DiscussionEmbed {...disqusConfig} /> }
       </div>
     </div>
   );

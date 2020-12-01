@@ -41,6 +41,7 @@
     "bluebird": "^3.7.2",
     "classnames": "^2.2.6",
     "codecov": "^3.7.2",
+    "disqus-react": "^1.0.10",
     "gatsby": "^2.24.57",
     "gatsby-cli": "^2.13.1",
     "gatsby-link": "^2.4.13",
