@@ -21,7 +21,7 @@ const Post = ({ post }: Props) => {
   const { url, disqusShortname } = useSiteMetadata();
 
   const disqusConfig = {
-    shortname: disqusShortname,
+    shortname: 'https-suyashb-netlify-app',
     config: { identifier: slug, title: post.frontmatter.title },
   };
 
@@ -40,7 +40,7 @@ const Post = ({ post }: Props) => {
       </div>
 
       <div className={styles['post__comments']}>
-        { disqusShortname && <DiscussionEmbed {...disqusConfig} /> }
+        <DiscussionEmbed {...disqusConfig} />
       </div>
     </div>
   );
