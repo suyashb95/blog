@@ -20,6 +20,8 @@ const Post = ({ post }: Props) => {
   const { tags, title, date } = post.frontmatter;
   const { url, disqusShortname } = useSiteMetadata();
 
+  console.log(process.env);
+  
   const disqusConfig = {
     shortname: 'https-suyashb-netlify-app',
     config: { identifier: slug, title: post.frontmatter.title },
