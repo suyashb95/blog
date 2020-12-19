@@ -16,6 +16,10 @@ module.exports = {
       path: '/'
     },
     {
+      label: 'Book Summaries',
+      path: '/category/summary'
+    },
+    {
       label: 'Now',
       path: '/pages/now'
     },    
