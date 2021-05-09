@@ -91,7 +91,7 @@ description: "Book Summary: Crossing the Chasm"
 		The potential product is the full blown experience 
 		-	Early markets work on the generic product, mainstream markets work on the whole product. Enthusiasts like to figure out how to integrate
 		different products so the whole product doesn't matter to them. Visionaries want to create an ecosystem for the whole product. Pragmatists won't
-		anything less than the whole product
+		do with anything less than the whole product
 		-	Using target customer scenarios, think about what more can be done to move towards the whole product and try to provide those things.
 		Just throwing the product out there might kill it because there is nothing to sustain it
 		-	Case Studies

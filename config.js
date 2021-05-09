@@ -3,8 +3,8 @@
 module.exports = {
   url: 'https://lumen.netlify.com',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Blog by Suyash Behera',
+  subtitle: '.A blog where I write about teach, my projects and learnings',
   copyright: '© All rights reserved.',
   disqusShortname: `${process.env.GATSBY_DISQUS_NAME}`,
   postsPerPage: 4,
@@ -34,7 +34,7 @@ module.exports = {
     bio: 'Hi! Welcome to my blog',
     contacts: {
       email: 'behera [dot] suyash@gmail.com',
-      telegram: 'sne9x',
+      telegram: 'bsuyash',
       twitter: '#',
       github: 'suyash458',
       linkedin: '#',
