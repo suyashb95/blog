@@ -35,10 +35,10 @@ module.exports = {
     contacts: {
       email: 'behera [dot] suyash@gmail.com',
       telegram: 'bsuyash',
-      twitter: '#',
+      twitter: 'suyashb95',
       github: 'suyash458',
-      linkedin: '#',
-      instagram: 'suyashbehera',
+      linkedin: 'suyash-behera',
+      instagram: 'suyashb95',
     }
   }
 };
