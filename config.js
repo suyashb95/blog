@@ -36,7 +36,7 @@ module.exports = {
       email: 'behera [dot] suyash@gmail.com',
       telegram: 'bsuyash',
       twitter: 'suyashb95',
-      github: 'suyash458',
+      github: 'suyashb95',
       linkedin: 'suyash-behera',
       instagram: 'suyashb95',
     }

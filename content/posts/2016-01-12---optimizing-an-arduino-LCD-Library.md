@@ -240,4 +240,4 @@ Neat! We don't have to keep setting the cursor position for each pixel in the re
 
 ![](https://thumbs.gfycat.com/FamousCourteousGermanshepherd-small.gif)
 
-No more screen tearing! The optmized code reaches a steady state in 10 seconds (that's almost half the time the older version takes). The entire script can be found [here](https://github.com/Suyash458/MCUProjects/blob/master/LCD Projects/gameoflife/gameoflife.ino)
+No more screen tearing! The optmized code reaches a steady state in 10 seconds (that's almost half the time the older version takes). The entire script can be found [here](https://github.com/suyashb95/MCUProjects/blob/master/LCD Projects/gameoflife/gameoflife.ino)
